@@ -5,7 +5,6 @@
 }
 
 nav {
-	position: sticky;
 	top:0;
 	z-index: 1;
 	background-color: #D8EFF8;
@@ -18,7 +17,7 @@ nav {
 	width: 100%;
 	display: flex;
 	margin: 0 auto;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 1rem 0;
 }
 
@@ -26,28 +25,223 @@ nav {
 		display: flex;
 		list-style: none;
 		align-items: center;
+		border:0;
+		justify-content: flex-end;
 }
 
-.navbr .nav {
-	padding: 0 1rem;
+.navbr .nav-item button {
+	padding: 1rem 2rem;
 	font-weight: bold;
 }
 
-.navbutton {
+.navbr .nav-item button.active {
+	border:0;
+	color:#998FAE;
+	background: unset;
+}
+
+#contact-tab {
 	background-color: #79EAAD;
 	color: #354B46;
 	font-weight: bold;
-	text-emphasis-color:#A2FFED;
+	text-emphasis-color:#814F64;
 	padding: 0.75rem 1.50rem;
 	font-size: 1rem;
 	border: 0;
 	border-radius: 25px;
+	display: none;
+}
 
+#contact-tab:hover {
+	opacity:0.7;
+	background-color:#00C5A7 ;
+}
 
+#contact-tab1 {
+	background-color: #79EAAD;
+	color: #354B46;
+	font-weight: bold;
+	text-emphasis-color:#814F64;
+	padding: 0.75rem 1.50rem;
+	font-size: 1rem;
+	border: 0;
+	border-radius: 25px;
+}
 
+#contact-tab1:hover {
+	opacity:0.7;
+	background-color:#00C5A7 ;
+}
+
+.carousel-item {
+	height: 100%;
+	width: 100%;
+}
+
+#backgroundcarol #carol1 {
+	background: url(./img/html.png);
+  background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+}
+
+#backgroundcarol #carol2 {
+	background: url(./img/css.png);
+  background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+}
+
+#backgroundcarol #carol3 {
+	background: url(./img/bootstrap.png);
+  background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
 }
 
 
+#backgroundcarol #carol4 {
+	background: url(./img/ops.png);
+  background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+}
+
+
+
+.content-wrapper {
+	position:relative;
+}
+.content-container{
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: rgba(255,255,255,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+.content-container section {
+	width: 100%;
+}
+
+#home {
+	width: auto;
+	margin-top: 5rem;
+	padding: 1rem;
+}
+
+h1 {
+	color:#814F64;
+	font-weight: bold;
+	font-size:5rem;
+	font-family: 'Staatliches', cursive;
+}
+
+h2 {
+		font-weight: bold;
+	}
+
+h4 {
+		font-weight: bold;
+}
+
+
+.fa {
+  font-size: 25px;
+  width: 50px;
+  height:50px;
+  border-radius: 150%;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px;
+  margin:5px 2px;
+}
+
+#socmed {
+	padding-top: 3rem;
+}
+.fa:hover {
+  background-color:#F9F871
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+#about h2 {
+	color:#814F64;
+	font-weight: bold;
+	font-size:3rem;
+}
+
+#about p {
+	font-weight: bold;
+}
+
+#about p:hover {
+	background-color:#F9F871;
+}
+
+#projects {
+	margin-top: 2rem;
+	width: auto;
+}
+
+#projects h2 {
+	color:#814F64;
+	font-weight: bold;
+	font-size:3rem;
+	text-align: center;
+}
+
+#projects img {
+	border-radius: 150px;
+	padding: 5rem;
+}
+
+#contact {
+	width: auto;
+}
+
+#contact h2 {
+	color:#814F64;
+	font-weight: bold;
+	font-size:3rem;
+}
+
+@media screen and (min-width: 768px) {
+ .content-container section {
+ 	width: 400px !important;
+ 	margin:0 auto;
+ 	text-align: center !important;
+ }
+
+  #contact {
+  	margin: 0 auto;
+  }
+
+  .navbr{
+  	justify-content: center;
+  }
+
+  #contact-tab {
+  	display: block;
+  }
+ }
 
 /*CAPSTONE 1 DEVELOPMENT - DEVELOPERS PORTFOLIO
 
