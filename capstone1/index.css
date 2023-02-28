@@ -100,15 +100,6 @@ nav {
 }
 
 
-#backgroundcarol #carol4 {
-	background: url(./img/ops.png);
-  background-size: cover;
-  -moz-background-size: cover;
-  background-position: center center;
-}
-
-
-
 .content-wrapper {
 	position:relative;
 }
@@ -153,7 +144,6 @@ h4 {
   width: 50px;
   height:50px;
   border-radius: 150%;
-  text-decoration: none;
   text-align: center;
   padding: 14px;
   margin:5px 2px;
@@ -181,19 +171,19 @@ h4 {
   color: white;
 }
 
-
-#about h2 {
-	color:#814F64;
-	font-weight: bold;
-	font-size:3rem;
+#about {
+	width: auto;
+	text-align: left!important;
 }
 
 #about p {
 	font-weight: bold;
+	margin: 3rem;
 }
 
 #about p:hover {
-	background-color:#F9F871;
+	background-color: #D8EFF8;
+
 }
 
 #projects {
@@ -209,9 +199,9 @@ h4 {
 }
 
 #projects img {
-	border-radius: 150px;
-	padding: 5rem;
+	border-radius: 25px;
 }
+
 
 #contact {
 	width: auto;
@@ -222,6 +212,8 @@ h4 {
 	font-weight: bold;
 	font-size:3rem;
 }
+
+
 
 @media screen and (min-width: 768px) {
  .content-container section {
@@ -241,7 +233,8 @@ h4 {
   #contact-tab {
   	display: block;
   }
- }
+ 
+
 
 /*CAPSTONE 1 DEVELOPMENT - DEVELOPERS PORTFOLIO
 
@@ -272,3 +265,5 @@ Reminders:
 7. There should be no dead links.
 8. Do not create another website other than the required developer portfolio.
 9. Do not use templates found in other sites.*/
+
+
